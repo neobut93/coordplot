@@ -81,7 +81,7 @@ fun Map(xPercent: Float, yPercent: Float, modifier: Modifier = Modifier) {
     ) {
         Box(
             modifier
-                .offset((xPercent * 300 - 18).dp, (yPercent * 300 - 18).dp)
+                .offset((xPercent * squareBox - innerBox/2).dp, (yPercent * squareBox - innerBox/2).dp)
                 .size(innerBox.dp)
                 .clip(shape = CircleShape)
                 .background(Color.Green)
