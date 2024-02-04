@@ -4,7 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.requiredWidth
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Text
@@ -23,7 +23,6 @@ import androidx.compose.ui.unit.sp
 import com.kodeco.android.coordplot.R
 import com.kodeco.android.coordplot.ui.theme.MyApplicationTheme
 import com.kodeco.android.coordplot.utils.UtilMethods.convertFloatToInt
-import kotlin.math.roundToInt
 
 @Composable
 fun MapSlider(
@@ -44,13 +43,13 @@ fun MapSlider(
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .padding(start = 8.dp)
-                    .requiredWidth(120.dp),
+                    .width(120.dp),
                 style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp)
             )
             Slider(
                 value = xPercentage,
                 onValueChange = xValueChanged,
-                valueRange = 0.001f..1f,
+                valueRange = 0.001f..1f
             )
         }
         Row(
@@ -63,7 +62,7 @@ fun MapSlider(
                 textAlign = TextAlign.Center,
                 modifier = Modifier
                     .padding(start = 8.dp)
-                    .requiredWidth(120.dp),
+                    .width(120.dp),
                 style = MaterialTheme.typography.titleMedium.copy(fontSize = 20.sp)
             )
             Slider(

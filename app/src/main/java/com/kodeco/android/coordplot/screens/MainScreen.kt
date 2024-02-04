@@ -81,7 +81,7 @@ fun MainScreen() {
 
 @Preview(showBackground = true)
 @Composable
-fun PlotSurfacePreview() {
+fun MainScreenPreview() {
     MyApplicationTheme {
         MainScreen()
     }
