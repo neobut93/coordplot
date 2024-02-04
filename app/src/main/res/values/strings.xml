@@ -2,4 +2,5 @@
     <string name="app_name">My Application</string>
     <string name="x_axis_title">X Axis %1$d%%</string>
     <string name="y_axis_title">Y Axis %1$d%%</string>
+    <string name="app_background">App Background</string>
 </resources>
