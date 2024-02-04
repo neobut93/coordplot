@@ -44,7 +44,7 @@ fun MainScreen() {
         if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
             Row(
                 modifier = Modifier
-                    .padding(30.dp),
+                    .padding(55.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
