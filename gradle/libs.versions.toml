@@ -52,6 +52,8 @@ navigation = { module = "androidx.navigation:navigation-compose" , version.ref="
 
 fonts = {  module = "androidx.compose.ui:ui-text-google-fonts", version.ref="fonts" }
 
+splash-screen = { module = "androidx.core:core-splashscreen", version.ref="compose-integration-constraintlayout"}
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
