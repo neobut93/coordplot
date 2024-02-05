@@ -10,8 +10,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -30,8 +32,8 @@ import com.kodeco.android.coordplot.ui.theme.MyApplicationTheme
 @Composable
 fun MainScreen() {
     val orientation = LocalConfiguration.current.orientation
-    var xPercentage: Float by remember { mutableStateOf(0.5f) }
-    var yPercentage: Float by remember { mutableStateOf(0.5f) }
+    var xPercentage: Float by rememberSaveable { mutableFloatStateOf(0.5f) }
+    var yPercentage: Float by rememberSaveable { mutableFloatStateOf(0.5f) }
     Box {
         Image(
             modifier = Modifier
